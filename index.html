@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedCore Clinic — Advanced Healthcare Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="11" y="2" width="6" height="24" rx="3" fill="#0891b2"/>
+            <rect x="2" y="11" width="24" height="6" rx="3" fill="#0891b2"/>
+          </svg>
+        </span>
+        <span class="brand-text">MedCore <span>Clinic</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#departments" class="nav-link">Departments</a>
+        <a href="#doctors" class="nav-link">Doctors</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#appointment" class="nav-link">Appointments</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#appointment" class="nav-cta-btn">Book Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+      <div class="hero-dots"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="7" fill="#0891b2"/><path d="M4 7h6M7 4v6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Trusted by 15,000+ Patients
+      </div>
+      <h1 class="hero-title">Your Health Is Our<br><em>Greatest Priority</em></h1>
+      <p class="hero-sub">MedCore Clinic brings together world-class specialists, cutting-edge diagnostics, and compassionate care — all under one roof. Experience healthcare the way it should be.</p>
+      <div class="hero-btns">
+        <a href="#appointment" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="3" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 1v4M12 1v4M2 7h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Book Appointment
+        </a>
+        <a href="#services" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M9 6v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          View Services
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-float hero-card-1">
+        <div class="hc-icon teal">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2C6.03 2 2 6.03 2 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9z" stroke="#0891b2" stroke-width="1.5"/><path d="M11 7v4l3 3" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="hc-label">Open Hours</div>
+          <div class="hc-value">Mon–Sat 8AM–8PM</div>
+        </div>
+      </div>
+      <div class="hero-card-float hero-card-2">
+        <div class="hc-icon green">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2l2.5 5.5L19 8.5l-4 4 1 5.5L11 15.5 6 18l1-5.5-4-4 5.5-1L11 2z" stroke="#059669" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <div class="hc-label">Specialists</div>
+          <div class="hc-value">40+ Expert Doctors</div>
+        </div>
+      </div>
+      <div class="hero-card-float hero-card-3">
+        <div class="hc-icon blue">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 11h16M11 3v16" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="hc-label">Emergency</div>
+          <div class="hc-value">24/7 Available</div>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="hi-ring hi-ring-outer"></div>
+        <div class="hi-ring hi-ring-mid"></div>
+        <div class="hi-ring hi-ring-inner"></div>
+        <div class="hi-cross">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="24" y="4" width="16" height="56" rx="8" fill="#0891b2" opacity=".9"/><rect x="4" y="24" width="56" height="16" rx="8" fill="#0891b2" opacity=".9"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO STRIP -->
+  <div class="info-strip">
+    <div class="info-strip-inner">
+      <div class="info-item">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1C5.58 1 2 4.58 2 9s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z" stroke="#0891b2" stroke-width="1.5"/><path d="M10 5v4l3 3" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span><strong>Mon – Sat:</strong> 8:00 AM – 8:00 PM &nbsp;|&nbsp; <strong>Sun:</strong> 10:00 AM – 4:00 PM</span>
+      </div>
+      <div class="info-divider"></div>
+      <div class="info-item">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 4h3l1.5 4-2 1.5a11 11 0 005 5l1.5-2 4 1.5V17a1 1 0 01-1 1C8.16 18 2 11.84 2 5a1 1 0 011-1z" stroke="#0891b2" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span><strong>Emergency Hotline:</strong> +1 (800) 555-0199</span>
+      </div>
+      <div class="info-divider"></div>
+      <div class="info-item">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6.69 2 4 4.69 4 8c0 4.5 6 10 6 10s6-5.5 6-10c0-3.31-2.69-6-6-6z" stroke="#0891b2" stroke-width="1.5"/><circle cx="10" cy="8" r="2" stroke="#0891b2" stroke-width="1.5"/></svg>
+        <span><strong>Location:</strong> 247 Wellness Avenue, Suite 3, New York, NY 10001</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT US ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Who We Are</div>
+        <h2 class="section-title">About <span>MedCore Clinic</span></h2>
+        <p class="section-sub">Founded in 2005, MedCore Clinic has been a cornerstone of community health, delivering evidence-based, patient-centered care across a wide spectrum of medical disciplines.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>At MedCore, we believe exceptional healthcare begins with listening. Our multidisciplinary team of board-certified physicians, specialists, and support staff collaborate closely to ensure every patient receives accurate diagnoses, effective treatment plans, and compassionate follow-up care.</p>
+          <p>We invest continuously in the latest diagnostic technologies and evidence-based protocols so that our patients have access to the highest standard of modern medicine — without having to travel far from home.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">18+</span>
+              <span class="stat-label">Years of Service</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">40+</span>
+              <span class="stat-label">Specialist Doctors</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">15K+</span>
+              <span class="stat-label">Patients Served</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">12</span>
+              <span class="stat-label">Departments</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="feature-card">
+            <div class="fc-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="5" stroke="#0891b2" stroke-width="1.8"/><path d="M4 24c0-5.52 4.48-10 10-10s10 4.48 10 10" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Trusted Doctors</h4>
+            <p>All our physicians are board-certified with extensive clinical experience and a commitment to ongoing professional development.</p>
+          </div>
+          <div class="feature-card">
+            <div class="fc-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="6" width="22" height="16" rx="3" stroke="#0891b2" stroke-width="1.8"/><path d="M9 14h10M14 10v8" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Modern Equipment</h4>
+            <p>State-of-the-art diagnostic and treatment technology ensures faster, more accurate results and minimally invasive procedures.</p>
+          </div>
+          <div class="feature-card">
+            <div class="fc-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4C9.58 4 6 7.58 6 12c0 3.6 2.28 6.68 5.5 7.76V22h5v-2.24C19.72 18.68 22 15.6 22 12c0-4.42-3.58-8-8-8z" stroke="#0891b2" stroke-width="1.8"/><path d="M11 22h6" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Patient-First Care</h4>
+            <p>We treat every patient as an individual — taking the time to understand your history, concerns, and lifestyle before crafting a personalised care plan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPARTMENTS ===== -->
+  <section class="section depts-section" id="departments">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Medical Specialties</div>
+        <h2 class="section-title">Our <span>Departments</span></h2>
+        <p class="section-sub">Comprehensive care across a broad range of medical disciplines — all in one place.</p>
+      </div>
+      <div class="dept-grid">
+        <div class="dept-card" data-dept="dermatology">
+          <div class="dept-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><ellipse cx="18" cy="18" rx="12" ry="14" stroke="#0891b2" stroke-width="1.8"/><path d="M12 18c2-4 10-4 12 0" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="14" r="1.5" fill="#0891b2"/><circle cx="22" cy="14" r="1.5" fill="#0891b2"/></svg>
+          </div>
+          <h4>Dermatology</h4>
+          <p>Expert diagnosis and treatment of all skin, hair, and nail conditions, including cosmetic dermatology.</p>
+          <button class="dept-btn" onclick="openDeptModal('dermatology')">Learn More</button>
+        </div>
+        <div class="dept-card" data-dept="dentistry">
+          <div class="dept-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M12 6c-4 0-6 3-6 6 0 5 3 12 5 14 1 2 3 2 4 0l1-4 1 4c1 2 3 2 4 0 2-2 5-9 5-14 0-3-2-6-6-6-2 0-3 1-4 2-1-1-2-2-4-2z" stroke="#0891b2" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Dentistry</h4>
+          <p>Full-service dental care from preventive check-ups to orthodontics and oral surgery procedures.</p>
+          <button class="dept-btn" onclick="openDeptModal('dentistry')">Learn More</button>
+        </div>
+        <div class="dept-card" data-dept="pediatrics">
+          <div class="dept-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="12" r="6" stroke="#0891b2" stroke-width="1.8"/><path d="M8 30c0-5.52 4.48-10 10-10s10 4.48 10 10" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round"/><path d="M14 10l2 2 4-4" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Pediatrics</h4>
+          <p>Dedicated child-friendly care for infants, children, and adolescents from birth through age 18.</p>
+          <button class="dept-btn" onclick="openDeptModal('pediatrics')">Learn More</button>
+        </div>
+        <div class="dept-card" data-dept="cardiology">
+          <div class="dept-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 30S6 22 6 13a7 7 0 0112-4.9A7 7 0 0130 13c0 9-12 17-12 17z" stroke="#0891b2" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 16h4l2-4 3 8 2-4h5" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Cardiology</h4>
+          <p>Advanced heart health services including ECG, echocardiography, stress tests, and preventive cardiology.</p>
+          <button class="dept-btn" onclick="openDeptModal('cardiology')">Learn More</button>
+        </div>
+        <div class="dept-card" data-dept="orthopedics">
+          <div class="dept-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M14 8c0-3 4-4 4 0v20c0 3-4 4-4 0" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round"/><path d="M10 16h16" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round"/><circle cx="10" cy="10" r="3" stroke="#0891b2" stroke-width="1.5"/><circle cx="26" cy="26" r="3" stroke="#0891b2" stroke-width="1.5"/></svg>
+          </div>
+          <h4>Orthopedics</h4>
+          <p>Comprehensive musculoskeletal care — from sports injuries and joint replacement to spinal conditions.</p>
+          <button class="dept-btn" onclick="openDeptModal('orthopedics')">Learn More</button>
+        </div>
+        <div class="dept-card" data-dept="radiology">
+          <div class="dept-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="6" y="6" width="24" height="24" rx="4" stroke="#0891b2" stroke-width="1.8"/><circle cx="18" cy="18" r="6" stroke="#0891b2" stroke-width="1.8"/><circle cx="18" cy="18" r="2" fill="#0891b2"/></svg>
+          </div>
+          <h4>Radiology</h4>
+          <p>High-resolution imaging including MRI, CT scan, X-ray, and ultrasound with rapid reporting.</p>
+          <button class="dept-btn" onclick="openDeptModal('radiology')">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTORS ===== -->
+  <section class="section doctors-section" id="doctors">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Our Team</div>
+        <h2 class="section-title">Meet Our <span>Doctors</span></h2>
+        <p class="section-sub">A diverse team of board-certified specialists dedicated to your wellbeing.</p>
+      </div>
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <div class="doctor-avatar" style="--clr:#0891b2">
+            <span>SW</span>
+          </div>
+          <div class="doctor-info">
+            <h4>Dr. Sarah Whitmore</h4>
+            <span class="doctor-spec">Cardiologist</span>
+            <p>15+ years in interventional cardiology. Fellow of the American College of Cardiology.</p>
+            <button class="doc-btn" onclick="openDoctorModal('sarah')">View Profile</button>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-avatar" style="--clr:#7c3aed">
+            <span>JR</span>
+          </div>
+          <div class="doctor-info">
+            <h4>Dr. James Reyes</h4>
+            <span class="doctor-spec">Orthopedic Surgeon</span>
+            <p>Specialist in minimally invasive joint replacement and sports medicine rehabilitation.</p>
+            <button class="doc-btn" onclick="openDoctorModal('james')">View Profile</button>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-avatar" style="--clr:#059669">
+            <span>AK</span>
+          </div>
+          <div class="doctor-info">
+            <h4>Dr. Aisha Khan</h4>
+            <span class="doctor-spec">Dermatologist</span>
+            <p>Expert in medical and cosmetic dermatology. Published researcher in skin oncology.</p>
+            <button class="doc-btn" onclick="openDoctorModal('aisha')">View Profile</button>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-avatar" style="--clr:#dc2626">
+            <span>ML</span>
+          </div>
+          <div class="doctor-info">
+            <h4>Dr. Marcus Levi</h4>
+            <span class="doctor-spec">Pediatrician</span>
+            <p>Child development specialist with a gentle, family-centered approach to pediatric care.</p>
+            <button class="doc-btn" onclick="openDoctorModal('marcus')">View Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What We Offer</div>
+        <h2 class="section-title">Our <span>Services</span></h2>
+        <p class="section-sub">From routine check-ups to complex procedures, we offer a comprehensive range of clinical services.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="si-icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M13 2C7.48 2 3 6.48 3 12s4.48 10 10 10 10-4.48 10-10S18.52 2 13 2z" stroke="#0891b2" stroke-width="1.5"/><path d="M9 12l3 3 5-6" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h4>General Health Check-Up</h4>
+            <ul>
+              <li>Comprehensive physical examination</li>
+              <li>Blood pressure & glucose screening</li>
+              <li>BMI & nutritional assessment</li>
+              <li>Referrals to specialists as required</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="si-icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 13h18M13 4v18" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4>Emergency & Urgent Care</h4>
+            <ul>
+              <li>24/7 emergency consultation</li>
+              <li>Rapid triage and stabilisation</li>
+              <li>On-call specialist response</li>
+              <li>Ambulance coordination</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="si-icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="3" y="5" width="20" height="16" rx="2.5" stroke="#0891b2" stroke-width="1.5"/><path d="M8 13h10M8 9h6M8 17h4" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4>Lab & Diagnostic Tests</h4>
+            <ul>
+              <li>Full blood panel & biochemistry</li>
+              <li>Hormonal & thyroid profiles</li>
+              <li>Pathology & biopsy analysis</li>
+              <li>Same-day results available</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="si-icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="5" y="3" width="16" height="20" rx="3" stroke="#0891b2" stroke-width="1.5"/><path d="M9 9h8M9 13h8M9 17h4" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4>Chronic Disease Management</h4>
+            <ul>
+              <li>Diabetes care & monitoring</li>
+              <li>Hypertension management</li>
+              <li>Asthma & respiratory plans</li>
+              <li>Regular follow-up programmes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="si-icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M13 3l2.8 6.2L22 10l-5 4.9 1.2 6.9L13 18.7l-5.2 3.2L9 15 4 10.1l6.2-.8L13 3z" stroke="#0891b2" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h4>Vaccination & Immunisation</h4>
+            <ul>
+              <li>Adult & paediatric vaccines</li>
+              <li>Travel health consultations</li>
+              <li>Flu & pneumonia shots</li>
+              <li>Vaccination records management</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="si-icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M13 2C8.03 2 4 6.03 4 11s4.03 9 9 9a9 9 0 009-9c0-4.97-4.03-9-9-9z" stroke="#0891b2" stroke-width="1.5"/><path d="M9 11l3 3 5-5" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 22l4 2 4-2" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4>Mental Health & Wellness</h4>
+            <ul>
+              <li>Psychological assessment</li>
+              <li>Individual & group therapy</li>
+              <li>Stress & anxiety management</li>
+              <li>Confidential counselling sessions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="services-cta">
+        <a href="#appointment" class="btn btn-primary">Request a Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPOINTMENT FORM ===== -->
+  <section class="section appointment-section" id="appointment">
+    <div class="container">
+      <div class="appt-inner">
+        <div class="appt-info">
+          <div class="section-tag">Book Online</div>
+          <h2 class="section-title">Schedule Your<br><span>Appointment</span></h2>
+          <p>Fill in the form and our scheduling team will confirm your visit within 24 hours. For emergencies, please call our hotline directly.</p>
+          <div class="appt-contact-list">
+            <div class="acl-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 4h3l1.5 4-2 1.5a11 11 0 005 5l1.5-2 4 1.5V17a1 1 0 01-1 1C8.16 18 2 11.84 2 5a1 1 0 011-1z" stroke="#0891b2" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              +1 (800) 555-0199
+            </div>
+            <div class="acl-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="#0891b2" stroke-width="1.5"/><path d="M2 7l8 5 8-5" stroke="#0891b2" stroke-width="1.5" stroke-linecap="round"/></svg>
+              appointments@medcoreclinic.com
+            </div>
+          </div>
+        </div>
+        <form class="appt-form" id="apptForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name <span>*</span></label>
+              <input type="text" id="fname" name="fname" placeholder="John Doe" />
+              <span class="field-error" id="err-fname"></span>
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number <span>*</span></label>
+              <input type="tel" id="fphone" name="fphone" placeholder="+1 (555) 000-0000" />
+              <span class="field-error" id="err-fphone"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="femail">Email Address <span>*</span></label>
+              <input type="email" id="femail" name="femail" placeholder="you@email.com" />
+              <span class="field-error" id="err-femail"></span>
+            </div>
+            <div class="form-group">
+              <label for="fdept">Department <span>*</span></label>
+              <select id="fdept" name="fdept">
+                <option value="">Select Department</option>
+                <option>Cardiology</option>
+                <option>Dermatology</option>
+                <option>Dentistry</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+                <option>Radiology</option>
+                <option>General Medicine</option>
+                <option>Mental Health</option>
+              </select>
+              <span class="field-error" id="err-fdept"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fdate">Preferred Date <span>*</span></label>
+              <input type="date" id="fdate" name="fdate" />
+              <span class="field-error" id="err-fdate"></span>
+            </div>
+            <div class="form-group">
+              <label for="ftime">Preferred Time <span>*</span></label>
+              <select id="ftime" name="ftime">
+                <option value="">Select Time Slot</option>
+                <option>08:00 AM – 09:00 AM</option>
+                <option>09:00 AM – 10:00 AM</option>
+                <option>10:00 AM – 11:00 AM</option>
+                <option>11:00 AM – 12:00 PM</option>
+                <option>01:00 PM – 02:00 PM</option>
+                <option>02:00 PM – 03:00 PM</option>
+                <option>03:00 PM – 04:00 PM</option>
+                <option>04:00 PM – 05:00 PM</option>
+              </select>
+              <span class="field-error" id="err-ftime"></span>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="fmsg">Message / Symptoms</label>
+            <textarea id="fmsg" name="fmsg" rows="4" placeholder="Please describe your symptoms or any relevant medical history..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Confirm Appointment</button>
+          <div class="form-success" id="formSuccess">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#059669" stroke-width="1.8"/><path d="M7 12l4 4 6-7" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Thank you! Your appointment request has been received. We'll confirm within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Patient Voices</div>
+        <h2 class="section-title">What Our <span>Patients Say</span></h2>
+      </div>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p>"The cardiology team at MedCore is outstanding. Dr. Whitmore took the time to explain my condition in detail, and the follow-up care was exceptional. I feel more confident about my heart health than ever before."</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="--clr:#0891b2">RJ</div>
+                <div>
+                  <strong>Robert J.</strong>
+                  <span>Cardiology Patient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p>"Bringing my children to MedCore is always a stress-free experience. Dr. Levi is incredibly patient and kind — my kids actually look forward to their check-ups! The paediatric suite is modern and very child-friendly."</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="--clr:#7c3aed">LP</div>
+                <div>
+                  <strong>Linda P.</strong>
+                  <span>Pediatrics Patient Parent</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p>"After years struggling with a complex skin condition, I finally found answers at MedCore's dermatology department. Dr. Khan's thoroughness and expertise are unmatched. My skin has improved dramatically."</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="--clr:#059669">TM</div>
+                <div>
+                  <strong>Tania M.</strong>
+                  <span>Dermatology Patient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p>"I had my knee replacement surgery here and the entire process — from pre-op consultations to physiotherapy — was meticulously managed. I'm now back to hiking at 64 years old. Incredible result."</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="--clr:#dc2626">GH</div>
+                <div>
+                  <strong>George H.</strong>
+                  <span>Orthopedics Patient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="Next">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Contact <span>Us</span></h2>
+        <p class="section-sub">We're here to help. Reach out via any of the channels below.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="cc-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 6h4l2 5-3 2a14 14 0 006 6l2-3 5 2v4a2 2 0 01-2 2C9.16 24 4 18.84 4 8a2 2 0 012-2z" stroke="#0891b2" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Phone</h4>
+            <p>Main: +1 (800) 555-0199</p>
+            <p>Emergency: +1 (800) 555-0911</p>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="6" width="22" height="16" rx="3" stroke="#0891b2" stroke-width="1.6"/><path d="M3 10l11 7 11-7" stroke="#0891b2" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Email</h4>
+            <p>info@medcoreclinic.com</p>
+            <p>appointments@medcoreclinic.com</p>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3C9.03 3 5 7.03 5 12c0 7 9 15 9 15s9-8 9-15c0-4.97-4.03-9-9-9z" stroke="#0891b2" stroke-width="1.6"/><circle cx="14" cy="12" r="3" stroke="#0891b2" stroke-width="1.6"/></svg>
+            </div>
+            <h4>Address</h4>
+            <p>247 Wellness Avenue, Suite 3</p>
+            <p>New York, NY 10001, USA</p>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          <div class="map-inner">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" opacity=".25"><path d="M30 5C19.5 5 11 13.5 11 24c0 13.5 19 35 19 35s19-21.5 19-35c0-10.5-8.5-19-19-19z" stroke="#0891b2" stroke-width="2"/><circle cx="30" cy="24" r="7" stroke="#0891b2" stroke-width="2"/></svg>
+            <p>Interactive Map</p>
+            <span>247 Wellness Avenue, New York, NY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-brand">
+            <span class="brand-icon">
+              <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect x="11" y="2" width="6" height="24" rx="3" fill="#0891b2"/><rect x="2" y="11" width="24" height="6" rx="3" fill="#0891b2"/></svg>
+            </span>
+            <span class="brand-text">MedCore <span>Clinic</span></span>
+          </a>
+          <p>Delivering compassionate, evidence-based healthcare to our community since 2005.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M12 2H10C8.34 2 7 3.34 7 5v2H5v3h2v6h3v-6h2l1-3h-3V5a1 1 0 011-1h2V2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M17 2.5a8.38 8.38 0 01-2.4.66 4.19 4.19 0 001.84-2.31 8.36 8.36 0 01-2.66 1.02A4.18 4.18 0 003.65 5.9a4.24 4.24 0 00.11.96A11.87 11.87 0 012 2.89a4.18 4.18 0 001.3 5.58A4.17 4.17 0 011.4 8v.05a4.19 4.19 0 003.35 4.1 4.2 4.2 0 01-1.89.07 4.19 4.19 0 003.91 2.91A8.38 8.38 0 011 16.46a11.83 11.83 0 006.41 1.88c7.69 0 11.9-6.37 11.9-11.9l-.01-.54A8.5 8.5 0 0021 3.58a8.38 8.38 0 01-4 1.1z" stroke="currentColor" stroke-width="1.2"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="4" stroke="currentColor" stroke-width="1.4"/><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.4"/><circle cx="13.5" cy="4.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="1.4"/><path d="M6 8v5M6 6v.01M9 13v-3c0-1.1.9-2 2-2s2 .9 2 2v3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#doctors">Our Doctors</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#appointment">Appointments</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Departments</h5>
+          <ul>
+            <li><a href="#departments">Cardiology</a></li>
+            <li><a href="#departments">Dermatology</a></li>
+            <li><a href="#departments">Dentistry</a></li>
+            <li><a href="#departments">Orthopedics</a></li>
+            <li><a href="#departments">Pediatrics</a></li>
+            <li><a href="#departments">Radiology</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Opening Hours</h5>
+          <ul class="hours-list">
+            <li><span>Mon – Fri</span><span>8:00 – 20:00</span></li>
+            <li><span>Saturday</span><span>9:00 – 18:00</span></li>
+            <li><span>Sunday</span><span>10:00 – 16:00</span></li>
+            <li class="emergency-hours"><span>Emergency</span><span>24 / 7</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 MedCore Clinic. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>Designed for illustrative purposes only. Not a real medical facility.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 15V5M5 10l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- ===== DEPT MODAL ===== -->
+  <div class="modal-overlay" id="deptModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('deptModal')">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5 5l12 12M17 5L5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div id="deptModalContent"></div>
+    </div>
+  </div>
+
+  <!-- ===== DOCTOR MODAL ===== -->
+  <div class="modal-overlay" id="doctorModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('doctorModal')">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M5 5l12 12M17 5L5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div id="doctorModalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
